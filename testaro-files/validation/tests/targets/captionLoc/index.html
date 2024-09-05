@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+  © 2023 CVS Health and/or one of its affiliates. All rights reserved.
+
+  MIT License
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+-->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Page with standard and nonstandard caption locations</title>
+    <meta name="description" content="tester">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td, th {
+        padding: 0.3rem;
+        border: 0.2rem black solid;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Page with standard and nonstandard caption locations</h1>
+      <h2>Standard table</h2>
+      <table>
+        <caption>Factory personnel</caption>
+        <thead>
+          <tr><th>Name</th><th>Department</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Amy</th><td>Accessibility</td></tr>
+          <tr><th>Abe</th><td>Marketing</td></tr>
+        </tbody>
+      </table>
+      <h2>Nonstandard table</h2>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Department</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Amy</th><td>Accessibility</td></tr>
+          <tr><th>Abe</th><td>Marketing</td></tr>
+        </tbody>
+        <caption>Office personnel</caption>
+      </table>
+      <h2>Headerless table with caption in the head</h2>
+      <table>
+        <thead>
+          <caption>Farm personnel</caption>
+        </thead>
+        <tbody>
+          <tr><td>Given name</td><td>Unit</td></tr>
+          <tr><td>Kim</td><td>Cattle</td></tr>
+          <tr><td>Ken</td><td>Grain</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

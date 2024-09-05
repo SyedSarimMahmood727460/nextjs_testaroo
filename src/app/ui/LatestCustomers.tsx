@@ -1,4 +1,4 @@
-import { getCustomers } from "../lib/queries";
+import { getCustomers } from "../lib/fetchDataQueries";
 
 export default async function LatestCustomers() {
   const customers = await getCustomers();

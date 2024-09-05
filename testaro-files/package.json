@@ -1,0 +1,46 @@
+{
+  "name": "testaro",
+  "version": "47.1.6",
+  "description": "Run 1000 web accessibility tests from 11 tools and get a standardized report",
+  "main": "index.js",
+  "scripts": {
+    "tests": "node validation/executors/tests",
+    "test": "node validation/executors/test",
+    "run": "node validation/executors/run",
+    "dirWatch": "node validation/executors/dirWatch",
+    "netWatch": "node validation/executors/netWatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvs-health/testaro.git"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "testing",
+    "automation"
+  ],
+  "author": "Jonathan Pool <jonathan.pool@cvshealth.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cvs-health/testaro/issues"
+  },
+  "homepage": "https://github.com/cvs-health/testaro#readme",
+  "dependencies": {
+    "@qualweb/core": "*",
+    "@siteimprove/alfa-act": "*",
+    "@siteimprove/alfa-playwright": "*",
+    "@siteimprove/alfa-rules": "*",
+    "@wally-ax/wax-dev": "*",
+    "accessibility-checker": "*",
+    "aslint-testaro": "*",
+    "axe-playwright": "*",
+    "dotenv": "*",
+    "pixelmatch": "*",
+    "playwright": "*",
+    "playwright-dompath": "*"
+  },
+  "devDependencies": {
+    "eslint": "*"
+  }
+}

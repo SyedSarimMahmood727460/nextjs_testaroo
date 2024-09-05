@@ -1,0 +1,3697 @@
+{
+  "id": "job_1725525581415",
+  "what": "Accessibility check for https://news.ycombinator.com/",
+  "strict": true,
+  "standard": "only",
+  "observe": false,
+  "timeLimit": 30,
+  "device": {
+    "id": "Desktop Chrome",
+    "windowOptions": {
+      "reducedMotion": "no-preference",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "defaultBrowserType": "chromium"
+    }
+  },
+  "browserID": "chromium",
+  "target": {
+    "what": "Target Website",
+    "url": "https://news.ycombinator.com/"
+  },
+  "acts": [
+    {
+      "type": "test",
+      "launch": {},
+      "which": "axe",
+      "detailLevel": 2,
+      "rules": [
+        "color-contrast",
+        "html-has-lang",
+        "landmark-one-main",
+        "page-has-heading-one",
+        "region"
+      ],
+      "what": "Axe",
+      "startTime": 1725525595553,
+      "actualURL": "https://news.ycombinator.com/",
+      "data": {},
+      "standardResult": {
+        "totals": [
+          0,
+          0,
+          3,
+          238
+        ],
+        "instances": [
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1453557 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">1.</span>",
+            "boxID": "111:42:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[1]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=github.com/soptikha2\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">github.com/soptikha2</span>",
+            "boxID": "453:46:117:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[1]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(2) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:61:255:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41453557"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41453557\">60 points</span>",
+            "boxID": "139:61:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=asicsp\"]"
+            },
+            "excerpt": "<a href=\"user?id=asicsp\" class=\"hnuser\">asicsp</a>",
+            "boxID": "200:61:29:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-05T04:46:59.000000Z\"] > a[href=\"item?id=41453557\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453557\">3 hours ago</a>",
+            "boxID": "232:61:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41453557&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41453557&amp;goto=news\">hide</a>",
+            "boxID": "299:61:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41453557\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453557\">15&nbsp;comments</a>",
+            "boxID": "329:61:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1447758 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">2.</span>",
+            "boxID": "111:77:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[4]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=courtlistener.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">courtlistener.com</span>",
+            "boxID": "631:81:92:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[4]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(5) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:96:275:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41447758"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41447758\">524 points</span>",
+            "boxID": "139:96:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=Signez\"]"
+            },
+            "excerpt": "<a href=\"user?id=Signez\" class=\"hnuser\">Signez</a>",
+            "boxID": "206:96:31:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T16:41:50.000000Z\"] > a[href=\"item?id=41447758\"]"
+            },
+            "excerpt": "<a href=\"item?id=41447758\">15 hours ago</a>",
+            "boxID": "240:96:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41447758&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41447758&amp;goto=news\">hide</a>",
+            "boxID": "313:96:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41447758\"]"
+            },
+            "excerpt": "<a href=\"item?id=41447758\">503&nbsp;comments</a>",
+            "boxID": "344:96:70:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1448740 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">3.</span>",
+            "boxID": "111:112:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[7]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=ryanmulligan.dev\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">ryanmulligan.dev</span>",
+            "boxID": "374:116:93:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[7]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(8) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:131:299:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[8]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41448740"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41448740\">415 points</span>",
+            "boxID": "139:131:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[8]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=surprisetalk\"]"
+            },
+            "excerpt": "<a href=\"user?id=surprisetalk\" class=\"hnuser\">surprisetalk</a>",
+            "boxID": "206:131:55:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[8]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T18:13:51.000000Z\"] > a[href=\"item?id=41448740\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448740\">14 hours ago</a>",
+            "boxID": "264:131:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[8]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41448740&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41448740&amp;goto=news\">hide</a>",
+            "boxID": "337:131:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[8]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41448740\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448740\">131&nbsp;comments</a>",
+            "boxID": "368:131:70:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[8]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1453237 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">4.</span>",
+            "boxID": "111:147:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[10]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=01-ai.github.io\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">01-ai.github.io</span>",
+            "boxID": "435:151:79:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[10]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(11) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:166:265:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[11]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41453237"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41453237\">57 points</span>",
+            "boxID": "139:166:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[11]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=crbelaus\"]"
+            },
+            "excerpt": "<a href=\"user?id=crbelaus\" class=\"hnuser\">crbelaus</a>",
+            "boxID": "200:166:39:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[11]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-05T03:38:29.000000Z\"] > a[href=\"item?id=41453237\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453237\">5 hours ago</a>",
+            "boxID": "243:166:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[11]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41453237&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41453237&amp;goto=news\">hide</a>",
+            "boxID": "309:166:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[11]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41453237\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453237\">17&nbsp;comments</a>",
+            "boxID": "340:166:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[11]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1451698 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">5.</span>",
+            "boxID": "111:182:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[13]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=github.com/lmnr-ai\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">github.com/lmnr-ai</span>",
+            "boxID": "698:186:103:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[13]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(14) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:201:295:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[14]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41451698"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41451698\">131 points</span>",
+            "boxID": "139:201:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[14]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=skull8888888\"]"
+            },
+            "excerpt": "<a href=\"user?id=skull8888888\" class=\"hnuser\">skull8888888</a>",
+            "boxID": "206:201:63:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[14]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T22:52:19.000000Z\"] > a[href=\"item?id=41451698\"]"
+            },
+            "excerpt": "<a href=\"item?id=41451698\">9 hours ago</a>",
+            "boxID": "272:201:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[14]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41451698&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41451698&amp;goto=news\">hide</a>",
+            "boxID": "339:201:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[14]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41451698\"]"
+            },
+            "excerpt": "<a href=\"item?id=41451698\">21&nbsp;comments</a>",
+            "boxID": "370:201:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[14]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1448022 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">6.</span>",
+            "boxID": "111:217:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[16]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=dynamicland.org\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">dynamicland.org</span>",
+            "boxID": "272:221:89:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[16]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(17) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:236:287:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[17]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41448022"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41448022\">444 points</span>",
+            "boxID": "139:236:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[17]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=Pulcinella\"]"
+            },
+            "excerpt": "<a href=\"user?id=Pulcinella\" class=\"hnuser\">Pulcinella</a>",
+            "boxID": "206:236:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[17]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T17:02:14.000000Z\"] > a[href=\"item?id=41448022\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448022\">15 hours ago</a>",
+            "boxID": "253:236:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[17]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41448022&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41448022&amp;goto=news\">hide</a>",
+            "boxID": "326:236:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[17]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41448022\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448022\">135&nbsp;comments</a>",
+            "boxID": "356:236:70:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[17]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1419688 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">7.</span>",
+            "boxID": "111:252:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[19]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1419688 > .title:nth-child(3) > .titleline > .sitebit.comhead > a > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">github.com/jeremyevans</span>",
+            "boxID": "405:256:133:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[19]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(20) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:271:280:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[20]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41419688"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41419688\">22 points</span>",
+            "boxID": "139:271:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[20]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=thunderbong\"]"
+            },
+            "excerpt": "<a href=\"user?id=thunderbong\" class=\"hnuser\">thunderbong</a>",
+            "boxID": "200:271:60:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[20]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-01T19:38:01.000000Z\"] > a[href=\"item?id=41419688\"]"
+            },
+            "excerpt": "<a href=\"item?id=41419688\">3 hours ago</a>",
+            "boxID": "263:271:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[20]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41419688&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41419688&amp;goto=news\">hide</a>",
+            "boxID": "330:271:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[20]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41419688\"]"
+            },
+            "excerpt": "<a href=\"item?id=41419688\">8&nbsp;comments</a>",
+            "boxID": "361:271:58:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[20]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1420672 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">8.</span>",
+            "boxID": "111:287:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[22]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=leejo.github.io\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">leejo.github.io</span>",
+            "boxID": "335:291:77:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[22]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(23) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:306:260:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[23]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41420672"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41420672\">176 points</span>",
+            "boxID": "139:306:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[23]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=leejo\"]"
+            },
+            "excerpt": "<a href=\"user?id=leejo\" class=\"hnuser\">leejo</a>",
+            "boxID": "206:306:23:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[23]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-01T21:47:42.000000Z\"] > a[href=\"item?id=41420672\"]"
+            },
+            "excerpt": "<a href=\"item?id=41420672\">11 hours ago</a>",
+            "boxID": "232:306:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[23]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41420672&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41420672&amp;goto=news\">hide</a>",
+            "boxID": "305:306:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[23]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41420672\"]"
+            },
+            "excerpt": "<a href=\"item?id=41420672\">71&nbsp;comments</a>",
+            "boxID": "335:306:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[23]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1454257 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">9.</span>",
+            "boxID": "111:322:13:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[25]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=flexport.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">flexport.com</span>",
+            "boxID": "433:324:67:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[25]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"item?id=41454257\"]"
+            },
+            "excerpt": "<a href=\"item?id=41454257\">1 hour ago</a>",
+            "boxID": "139:338:51:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[26]/td[2]/span/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41454257&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41454257&amp;goto=news\">hide</a>",
+            "boxID": "200:338:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[26]/td[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1426318 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">10.</span>",
+            "boxID": "103:354:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[28]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=lantern.dev\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">lantern.dev</span>",
+            "boxID": "543:358:61:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[28]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(29) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:373:255:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[29]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41426318"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41426318\">57 points</span>",
+            "boxID": "139:373:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[29]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=varik77\"]"
+            },
+            "excerpt": "<a href=\"user?id=varik77\" class=\"hnuser\">varik77</a>",
+            "boxID": "200:373:35:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[29]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-02T15:34:55.000000Z\"] > a[href=\"item?id=41426318\"]"
+            },
+            "excerpt": "<a href=\"item?id=41426318\">8 hours ago</a>",
+            "boxID": "238:373:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[29]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41426318&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41426318&amp;goto=news\">hide</a>",
+            "boxID": "305:373:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[29]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41426318\"]"
+            },
+            "excerpt": "<a href=\"item?id=41426318\">8&nbsp;comments</a>",
+            "boxID": "336:373:58:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[29]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1448439 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">11.</span>",
+            "boxID": "103:389:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[31]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1448439 > .title:nth-child(3) > .titleline > .sitebit.comhead > a > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">github.com/ligo-biosciences</span>",
+            "boxID": "529:393:149:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[31]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(32) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:408:278:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[32]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41448439"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41448439\">223 points</span>",
+            "boxID": "139:408:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[32]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=EdHarris\"]"
+            },
+            "excerpt": "<a href=\"user?id=EdHarris\" class=\"hnuser\">EdHarris</a>",
+            "boxID": "206:408:40:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[32]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T17:44:17.000000Z\"] > a[href=\"item?id=41448439\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448439\">14 hours ago</a>",
+            "boxID": "249:408:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[32]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41448439&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41448439&amp;goto=news\">hide</a>",
+            "boxID": "322:408:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[32]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41448439\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448439\">28&nbsp;comments</a>",
+            "boxID": "352:408:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[32]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1452962 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">12.</span>",
+            "boxID": "103:424:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[34]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=antipope.org\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">antipope.org</span>",
+            "boxID": "279:428:68:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[34]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(35) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:443:273:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[35]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41452962"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41452962\">43 points</span>",
+            "boxID": "139:443:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[35]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=wallflower\"]"
+            },
+            "excerpt": "<a href=\"user?id=wallflower\" class=\"hnuser\">wallflower</a>",
+            "boxID": "200:443:47:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[35]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-05T02:33:55.000000Z\"] > a[href=\"item?id=41452962\"]"
+            },
+            "excerpt": "<a href=\"item?id=41452962\">6 hours ago</a>",
+            "boxID": "250:443:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[35]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41452962&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41452962&amp;goto=news\">hide</a>",
+            "boxID": "317:443:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[35]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41452962\"]"
+            },
+            "excerpt": "<a href=\"item?id=41452962\">19&nbsp;comments</a>",
+            "boxID": "348:443:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[35]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1428759 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">13.</span>",
+            "boxID": "103:459:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[37]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1428759 > .title:nth-child(3) > .titleline > .sitebit.comhead > a > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">falseceilings.wordpress.com</span>",
+            "boxID": "552:463:150:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[37]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(38) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:478:284:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[38]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41428759"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41428759\">13 points</span>",
+            "boxID": "139:478:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[38]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=tanananinena\"]"
+            },
+            "excerpt": "<a href=\"user?id=tanananinena\" class=\"hnuser\">tanananinena</a>",
+            "boxID": "200:478:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[38]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-02T20:58:24.000000Z\"] > a[href=\"item?id=41428759\"]"
+            },
+            "excerpt": "<a href=\"item?id=41428759\">3 hours ago</a>",
+            "boxID": "267:478:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[38]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41428759&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41428759&amp;goto=news\">hide</a>",
+            "boxID": "334:478:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[38]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41428759\"]"
+            },
+            "excerpt": "<a href=\"item?id=41428759\">2&nbsp;comments</a>",
+            "boxID": "364:478:58:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[38]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1447515 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">14.</span>",
+            "boxID": "103:494:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[40]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=quantamagazine.org\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">quantamagazine.org</span>",
+            "boxID": "575:498:110:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[40]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(41) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:513:285:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[41]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41447515"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41447515\">210 points</span>",
+            "boxID": "139:513:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[41]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=beefman\"]"
+            },
+            "excerpt": "<a href=\"user?id=beefman\" class=\"hnuser\">beefman</a>",
+            "boxID": "206:513:41:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[41]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T16:23:34.000000Z\"] > a[href=\"item?id=41447515\"]"
+            },
+            "excerpt": "<a href=\"item?id=41447515\">16 hours ago</a>",
+            "boxID": "250:513:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[41]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41447515&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41447515&amp;goto=news\">hide</a>",
+            "boxID": "323:513:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[41]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41447515\"]"
+            },
+            "excerpt": "<a href=\"item?id=41447515\">113&nbsp;comments</a>",
+            "boxID": "353:513:70:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[41]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1422395 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">15.</span>",
+            "boxID": "103:529:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[43]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=logto.io\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">logto.io</span>",
+            "boxID": "451:533:40:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[43]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(44) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:548:293:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[44]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41422395"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41422395\">19 points</span>",
+            "boxID": "139:548:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[44]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=balmy_tommy\"]"
+            },
+            "excerpt": "<a href=\"user?id=balmy_tommy\" class=\"hnuser\">balmy_tommy</a>",
+            "boxID": "200:548:67:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[44]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-02T03:40:00.000000Z\"] > a[href=\"item?id=41422395\"]"
+            },
+            "excerpt": "<a href=\"item?id=41422395\">5 hours ago</a>",
+            "boxID": "271:548:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[44]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41422395&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41422395&amp;goto=news\">hide</a>",
+            "boxID": "337:548:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[44]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41422395\"]"
+            },
+            "excerpt": "<a href=\"item?id=41422395\">12&nbsp;comments</a>",
+            "boxID": "368:548:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[44]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1426010 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">16.</span>",
+            "boxID": "103:564:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[46]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=github.com/rasteri\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">github.com/rasteri</span>",
+            "boxID": "530:568:99:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[46]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(47) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:583:266:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[47]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41426010"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41426010\">65 points</span>",
+            "boxID": "139:583:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[47]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=CTOSian\"]"
+            },
+            "excerpt": "<a href=\"user?id=CTOSian\" class=\"hnuser\">CTOSian</a>",
+            "boxID": "200:583:40:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[47]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-02T15:06:30.000000Z\"] > a[href=\"item?id=41426010\"]"
+            },
+            "excerpt": "<a href=\"item?id=41426010\">9 hours ago</a>",
+            "boxID": "243:583:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[47]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41426010&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41426010&amp;goto=news\">hide</a>",
+            "boxID": "310:583:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[47]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41426010\"]"
+            },
+            "excerpt": "<a href=\"item?id=41426010\">15&nbsp;comments</a>",
+            "boxID": "341:583:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[47]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1452339 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">17.</span>",
+            "boxID": "103:599:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[49]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=github.com/harsxv\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">github.com/harsxv</span>",
+            "boxID": "547:603:101:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[49]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(50) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:618:257:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[50]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41452339"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41452339\">75 points</span>",
+            "boxID": "139:618:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[50]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=harsxv\"]"
+            },
+            "excerpt": "<a href=\"user?id=harsxv\" class=\"hnuser\">harsxv</a>",
+            "boxID": "200:618:31:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[50]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-05T00:40:25.000000Z\"] > a[href=\"item?id=41452339\"]"
+            },
+            "excerpt": "<a href=\"item?id=41452339\">7 hours ago</a>",
+            "boxID": "235:618:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[50]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41452339&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41452339&amp;goto=news\">hide</a>",
+            "boxID": "302:618:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[50]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41452339\"]"
+            },
+            "excerpt": "<a href=\"item?id=41452339\">15&nbsp;comments</a>",
+            "boxID": "332:618:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[50]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1453283 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">18.</span>",
+            "boxID": "103:634:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[52]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=addons.mozilla.org\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">addons.mozilla.org</span>",
+            "boxID": "618:638:102:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[52]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(53) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:653:254:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[53]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41453283"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41453283\">14 points</span>",
+            "boxID": "139:653:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[53]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=bsgada\"]"
+            },
+            "excerpt": "<a href=\"user?id=bsgada\" class=\"hnuser\">bsgada</a>",
+            "boxID": "200:653:34:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[53]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-05T03:46:50.000000Z\"] > a[href=\"item?id=41453283\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453283\">4 hours ago</a>",
+            "boxID": "237:653:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[53]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41453283&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41453283&amp;goto=news\">hide</a>",
+            "boxID": "304:653:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[53]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41453283\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453283\">5&nbsp;comments</a>",
+            "boxID": "334:653:58:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[53]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1450824 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">19.</span>",
+            "boxID": "103:669:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[55]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=trickster.dev\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">trickster.dev</span>",
+            "boxID": "562:673:66:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[55]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(56) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:688:265:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[56]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41450824"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41450824\">67 points</span>",
+            "boxID": "139:688:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[56]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=rbanffy\"]"
+            },
+            "excerpt": "<a href=\"user?id=rbanffy\" class=\"hnuser\">rbanffy</a>",
+            "boxID": "200:688:33:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[56]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T21:07:05.000000Z\"] > a[href=\"item?id=41450824\"]"
+            },
+            "excerpt": "<a href=\"item?id=41450824\">11 hours ago</a>",
+            "boxID": "237:688:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[56]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41450824&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41450824&amp;goto=news\">hide</a>",
+            "boxID": "309:688:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[56]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41450824\"]"
+            },
+            "excerpt": "<a href=\"item?id=41450824\">23&nbsp;comments</a>",
+            "boxID": "340:688:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[56]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1451431 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">20.</span>",
+            "boxID": "103:704:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[58]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=viksnewsletter.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">viksnewsletter.com</span>",
+            "boxID": "621:708:102:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[58]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(59) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:723:266:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[59]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41451431"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41451431\">51 points</span>",
+            "boxID": "139:723:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[59]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=subbdue\"]"
+            },
+            "excerpt": "<a href=\"user?id=subbdue\" class=\"hnuser\">subbdue</a>",
+            "boxID": "200:723:40:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[59]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T22:13:40.000000Z\"] > a[href=\"item?id=41451431\"]"
+            },
+            "excerpt": "<a href=\"item?id=41451431\">10 hours ago</a>",
+            "boxID": "243:723:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[59]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41451431&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41451431&amp;goto=news\">hide</a>",
+            "boxID": "316:723:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[59]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41451431\"]"
+            },
+            "excerpt": "<a href=\"item?id=41451431\">3&nbsp;comments</a>",
+            "boxID": "346:723:58:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[59]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1425055 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">21.</span>",
+            "boxID": "103:739:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[61]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=noemamag.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">noemamag.com</span>",
+            "boxID": "475:743:86:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[61]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(62) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:758:236:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[62]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41425055"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41425055\">3 points</span>",
+            "boxID": "139:758:38:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[62]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=PaulHoule\"]"
+            },
+            "excerpt": "<a href=\"user?id=PaulHoule\" class=\"hnuser\">PaulHoule</a>",
+            "boxID": "194:758:46:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[62]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-02T13:02:38.000000Z\"] > a[href=\"item?id=41425055\"]"
+            },
+            "excerpt": "<a href=\"item?id=41425055\">2 hours ago</a>",
+            "boxID": "244:758:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[62]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41425055&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41425055&amp;goto=news\">hide</a>",
+            "boxID": "310:758:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[62]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41425055\"]"
+            },
+            "excerpt": "<a href=\"item?id=41425055\">discuss</a>",
+            "boxID": "341:758:34:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[62]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1447317 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">22.</span>",
+            "boxID": "103:774:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[64]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=github.com/mem0ai\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">github.com/mem0ai</span>",
+            "boxID": "539:778:108:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[64]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(65) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:793:285:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[65]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41447317"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41447317\">149 points</span>",
+            "boxID": "139:793:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[65]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=staranjeet\"]"
+            },
+            "excerpt": "<a href=\"user?id=staranjeet\" class=\"hnuser\">staranjeet</a>",
+            "boxID": "206:793:47:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[65]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T16:01:40.000000Z\"] > a[href=\"item?id=41447317\"]"
+            },
+            "excerpt": "<a href=\"item?id=41447317\">16 hours ago</a>",
+            "boxID": "257:793:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[65]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41447317&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41447317&amp;goto=news\">hide</a>",
+            "boxID": "329:793:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[65]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41447317\"]"
+            },
+            "excerpt": "<a href=\"item?id=41447317\">48&nbsp;comments</a>",
+            "boxID": "360:793:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[65]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1448985 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">23.</span>",
+            "boxID": "103:809:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[67]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=kagi.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">kagi.com</span>",
+            "boxID": "241:813:49:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[67]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(68) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:828:306:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[68]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41448985"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41448985\">386 points</span>",
+            "boxID": "139:828:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[68]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=darthShadow\"]"
+            },
+            "excerpt": "<a href=\"user?id=darthShadow\" class=\"hnuser\">darthShadow</a>",
+            "boxID": "206:828:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[68]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T18:35:53.000000Z\"] > a[href=\"item?id=41448985\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448985\">14 hours ago</a>",
+            "boxID": "271:828:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[68]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41448985&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41448985&amp;goto=news\">hide</a>",
+            "boxID": "344:828:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[68]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41448985\"]"
+            },
+            "excerpt": "<a href=\"item?id=41448985\">186&nbsp;comments</a>",
+            "boxID": "375:828:70:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[68]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1443493 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">24.</span>",
+            "boxID": "103:844:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[70]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=dagitty.net\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">dagitty.net</span>",
+            "boxID": "447:848:57:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[70]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(71) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:863:282:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[71]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41443493"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41443493\">166 points</span>",
+            "boxID": "139:863:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[71]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=smartmic\"]"
+            },
+            "excerpt": "<a href=\"user?id=smartmic\" class=\"hnuser\">smartmic</a>",
+            "boxID": "206:863:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[71]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T09:10:02.000000Z\"] > a[href=\"item?id=41443493\"]"
+            },
+            "excerpt": "<a href=\"item?id=41443493\">20 hours ago</a>",
+            "boxID": "253:863:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[71]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41443493&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41443493&amp;goto=news\">hide</a>",
+            "boxID": "326:863:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[71]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41443493\"]"
+            },
+            "excerpt": "<a href=\"item?id=41443493\">20&nbsp;comments</a>",
+            "boxID": "356:863:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[71]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1413006 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">25.</span>",
+            "boxID": "103:879:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[73]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=hakaimagazine.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">hakaimagazine.com</span>",
+            "boxID": "549:883:107:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[73]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(74) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:898:255:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[74]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41413006"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41413006\">11 points</span>",
+            "boxID": "139:898:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[74]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=diodorus\"]"
+            },
+            "excerpt": "<a href=\"user?id=diodorus\" class=\"hnuser\">diodorus</a>",
+            "boxID": "200:898:40:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[74]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-01T00:06:02.000000Z\"] > a[href=\"item?id=41413006\"]"
+            },
+            "excerpt": "<a href=\"item?id=41413006\">8 hours ago</a>",
+            "boxID": "244:898:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[74]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41413006&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41413006&amp;goto=news\">hide</a>",
+            "boxID": "310:898:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[74]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41413006\"]"
+            },
+            "excerpt": "<a href=\"item?id=41413006\">1&nbsp;comment</a>",
+            "boxID": "341:898:53:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[74]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1412601 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">26.</span>",
+            "boxID": "103:914:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[76]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=webonastick.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">webonastick.com</span>",
+            "boxID": "275:918:92:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[76]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(77) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:933:278:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[77]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41412601"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41412601\">146 points</span>",
+            "boxID": "139:933:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[77]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=Rendello\"]"
+            },
+            "excerpt": "<a href=\"user?id=Rendello\" class=\"hnuser\">Rendello</a>",
+            "boxID": "206:933:40:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[77]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-08-31T22:42:59.000000Z\"] > a[href=\"item?id=41412601\"]"
+            },
+            "excerpt": "<a href=\"item?id=41412601\">16 hours ago</a>",
+            "boxID": "249:933:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[77]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41412601&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41412601&amp;goto=news\">hide</a>",
+            "boxID": "322:933:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[77]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41412601\"]"
+            },
+            "excerpt": "<a href=\"item?id=41412601\">24&nbsp;comments</a>",
+            "boxID": "353:933:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[77]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1446916 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">27.</span>",
+            "boxID": "103:949:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[79]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=bottosson.github.io\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">bottosson.github.io</span>",
+            "boxID": "342:953:103:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[79]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(80) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:968:284:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[80]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41446916"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41446916\">82 points</span>",
+            "boxID": "139:968:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[80]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=Brajeshwar\"]"
+            },
+            "excerpt": "<a href=\"user?id=Brajeshwar\" class=\"hnuser\">Brajeshwar</a>",
+            "boxID": "200:968:52:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[80]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T15:28:08.000000Z\"] > a[href=\"item?id=41446916\"]"
+            },
+            "excerpt": "<a href=\"item?id=41446916\">17 hours ago</a>",
+            "boxID": "256:968:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[80]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41446916&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41446916&amp;goto=news\">hide</a>",
+            "boxID": "328:968:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[80]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41446916\"]"
+            },
+            "excerpt": "<a href=\"item?id=41446916\">30&nbsp;comments</a>",
+            "boxID": "359:968:64:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[80]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1432396 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">28.</span>",
+            "boxID": "103:984:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[82]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=jeremykun.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">jeremykun.com</span>",
+            "boxID": "246:988:84:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[82]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(83) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:1003:275:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[83]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41432396"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41432396\">9 points</span>",
+            "boxID": "139:1003:38:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[83]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=boltzmann64\"]"
+            },
+            "excerpt": "<a href=\"user?id=boltzmann64\" class=\"hnuser\">boltzmann64</a>",
+            "boxID": "194:1003:61:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[83]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-03T07:52:09.000000Z\"] > a[href=\"item?id=41432396\"]"
+            },
+            "excerpt": "<a href=\"item?id=41432396\">6 hours ago</a>",
+            "boxID": "258:1003:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[83]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41432396&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41432396&amp;goto=news\">hide</a>",
+            "boxID": "325:1003:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[83]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41432396\"]"
+            },
+            "excerpt": "<a href=\"item?id=41432396\">2&nbsp;comments</a>",
+            "boxID": "356:1003:58:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[83]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1453975 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">29.</span>",
+            "boxID": "103:1019:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[85]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1453975 > .title:nth-child(3) > .titleline > .sitebit.comhead > a > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">infosecurity-magazine.com</span>",
+            "boxID": "570:1023:144:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[85]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(86) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:1038:284:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[86]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41453975"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41453975\">10 points</span>",
+            "boxID": "139:1038:44:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[86]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=marsh_mellow\"]"
+            },
+            "excerpt": "<a href=\"user?id=marsh_mellow\" class=\"hnuser\">marsh_mellow</a>",
+            "boxID": "200:1038:68:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[86]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-05T06:03:48.000000Z\"] > a[href=\"item?id=41453975\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453975\">2 hours ago</a>",
+            "boxID": "272:1038:56:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[86]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41453975&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41453975&amp;goto=news\">hide</a>",
+            "boxID": "339:1038:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[86]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41453975\"]"
+            },
+            "excerpt": "<a href=\"item?id=41453975\">1&nbsp;comment</a>",
+            "boxID": "369:1038:53:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[86]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#\\34 1445413 > .title[align=\"right\"][valign=\"top\"] > .rank"
+            },
+            "excerpt": "<span class=\"rank\">30.</span>",
+            "boxID": "103:1054:22:16",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[88]/td[1]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"from?site=reuters.com\"] > .sitestr"
+            },
+            "excerpt": "<span class=\"sitestr\">reuters.com</span>",
+            "boxID": "383:1058:65:13",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[88]/td[3]/span/span/a/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "tr:nth-child(89) > .subtext > .subline"
+            },
+            "excerpt": "<span class=\"subline\">",
+            "boxID": "139:1073:302:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[89]/td[2]/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "#score_41445413"
+            },
+            "excerpt": "<span class=\"score\" id=\"score_41445413\">498 points</span>",
+            "boxID": "139:1073:50:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[89]/td[2]/span/span[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"user?id=colesantiago\"]"
+            },
+            "excerpt": "<a href=\"user?id=colesantiago\" class=\"hnuser\">colesantiago</a>",
+            "boxID": "206:1073:58:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[89]/td[2]/span/a[1]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "span[title=\"2024-09-04T13:17:55.000000Z\"] > a[href=\"item?id=41445413\"]"
+            },
+            "excerpt": "<a href=\"item?id=41445413\">19 hours ago</a>",
+            "boxID": "268:1073:62:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[89]/td[2]/span/span[2]/a"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "a[href=\"hide?id=41445413&goto=news\"]"
+            },
+            "excerpt": "<a href=\"hide?id=41445413&amp;goto=news\">hide</a>",
+            "boxID": "340:1073:20:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[89]/td[2]/span/a[2]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 7.0pt (9.33333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "A",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".subline > a[href=\"item?id=41445413\"]"
+            },
+            "excerpt": "<a href=\"item?id=41445413\">598&nbsp;comments</a>",
+            "boxID": "371:1073:70:11",
+            "pathID": "/html/body/center/table/tbody/tr[3]/td/table/tbody/tr[89]/td[2]/span/a[3]"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 8.0pt (10.6667px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "SPAN",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": ".yclinks"
+            },
+            "excerpt": "<span class=\"yclinks\">",
+            "boxID": "450:1143:381:13",
+            "pathID": "/html/body/center/table/tbody/tr[4]/td/center/span"
+          },
+          {
+            "ruleID": "color-contrast",
+            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.54 (foreground color: #828282, background color: #f6f6ef, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "ordinalSeverity": 3,
+            "tagName": "FORM",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "form"
+            },
+            "excerpt": "<form method=\"get\" action=\"//hn.algolia.com/\">Search: <input type=\"text\" name=\"q\" size=\"17\" autocorrect=\"off\" spellcheck=\"false\" autocapitalize=\"off\" autocomplete=\"off\"></form>",
+            "boxID": "103:1172:1074:21",
+            "pathID": "/html/body/center/table/tbody/tr[4]/td/center/form"
+          },
+          {
+            "ruleID": "landmark-one-main",
+            "what": "Document should have one main landmark; Document does not have a main landmark",
+            "ordinalSeverity": 2,
+            "tagName": "HTML",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "html"
+            },
+            "excerpt": "<html lang=\"en\" op=\"news\">",
+            "boxID": "0:0:1280:1214",
+            "pathID": "/html"
+          },
+          {
+            "ruleID": "page-has-heading-one",
+            "what": "Page should contain a level-one heading; Page must have a level-one heading",
+            "ordinalSeverity": 2,
+            "tagName": "HTML",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "html"
+            },
+            "excerpt": "<html lang=\"en\" op=\"news\">",
+            "boxID": "0:0:1280:1214",
+            "pathID": "/html"
+          },
+          {
+            "ruleID": "region",
+            "what": "All page content should be contained by landmarks; Some page content is not contained by landmarks",
+            "ordinalSeverity": 2,
+            "tagName": "CENTER",
+            "id": "",
+            "location": {
+              "doc": "dom",
+              "type": "selector",
+              "spec": "body > center"
+            },
+            "excerpt": "<center>",
+            "boxID": "8:8:1264:1198",
+            "pathID": "/html/body/center"
+          }
+        ]
+      },
+      "endTime": 1725525608290
+    }
+  ],
+  "sources": {},
+  "creationTimeStamp": "240905T0839",
+  "executionTimeStamp": "240905T0844",
+  "sendReportTo": "",
+  "jobData": {
+    "startTime": "24-09-05T08:39",
+    "endTime": "24-09-05T08:40",
+    "elapsedSeconds": 12,
+    "visitLatency": 4,
+    "logCount": 0,
+    "logSize": 0,
+    "errorLogCount": 0,
+    "errorLogSize": 0,
+    "prohibitedCount": 0,
+    "visitRejectionCount": 0,
+    "aborted": false,
+    "abortedAct": null,
+    "presses": 0,
+    "amountRead": 0,
+    "toolTimes": {
+      "axe": 7
+    },
+    "preventions": {}
+  }
+}

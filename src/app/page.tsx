@@ -1,4 +1,4 @@
-import LatestCustomers from "./ui/data_display";
+import LatestCustomers from "./ui/LatestCustomers";
 import UrlForm from "./ui/url_form";
 
 export default async function Page() {

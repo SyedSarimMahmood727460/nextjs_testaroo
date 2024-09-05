@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  © 2022–2023 CVS Health and/or one of its affiliates. All rights reserved.
+
+  MIT License
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+-->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Page with mixed focus indication</title>
+    <meta name="description" content="tester">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #button:focus, #checkbox:focus {
+        outline: 3px solid blue;
+        outline-offset: 2px;
+      }
+      #checkbox {
+        transition-property: outline;
+        transition-delay: 35ms;
+        transition-duration: 40ms;
+      }
+      #outlinedInput {
+        outline: 2px solid black;
+      }
+      #outlinedInput:focus {
+        outline: 2px solid brown;
+      }
+      #slowLink {
+        transition-property: border;
+        transition-delay: 125ms;
+      }
+      #slowLink:focus, #sluggishLink:focus {
+        border: 2px solid green;
+        outline: none;
+      }
+      #sluggishLink {
+        transition-property: border;
+        transition-delay: 525ms;
+      }
+      #special:focus {
+        outline: none;
+        text-decoration-line: underline overline;
+        text-decoration-color: darkorange;
+      }
+      #textInput:focus {
+        outline: none;
+      }
+      #thickOutlineInput {
+        outline: 1px solid black;
+      }
+      #thickOutlineInput:focus {
+        outline: 4px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Page with mixed focus indication</h1>
+      <p>Defect 1: This paragraph contains a link to <a href="https://en.wikipedia.org">English information</a>, which exhibits a default focus indicator (outline).</p>
+      <p>This paragraph contains a <button id="button" type="button">button</button> with a custom outline as its focus indicator (outline).</p>
+      <p>Defect 2: This paragraph contains a <label>text input <input id="textInput" type="text"></label> with the focus indicator suppressed (none).</p>
+      <p>Defect 3: This paragraph contains a <label>text input <input id="outlinedInput" type="text"></label> with a custom outline, which changes only color when the input is focused (other).</p>
+      <p>Defect 4: This paragraph contains a <label>text input <input id="thickOutlineInput" type="text"></label> with a custom outline, which changes only thickness when the input is focused (other).</p>
+      <p>Defect 5: This paragraph contains a checkbox with a custom focus-indication outline that finishes appearing 75 ms after the checkbox becomes focused (outline). <label><input id="checkbox" type="checkbox"> I am a bad page.</label></p>
+      <p>Defect 6: This paragraph contains a link to <a id="slowLink" href="https://fr.wikipedia.org">French information</a> with a custom border as its only focus indicator. The border appears 125 ms after the link becomes focused (other).</p>
+      <p>Defect 7: This paragraph contains a link to <a id="sluggishLink" href="https://de.wikipedia.org">German information</a> with a custom border as its only focus indicator. The border appears 525 ms after the link becomes focused (none).</p>
+      <p>Defect 8: This paragraph contains a button with a focus indicator consisting solely of an underline and an overline (other). <button id="special" type="button">special button</button></p>
+    </main>
+  </body>
+</html>

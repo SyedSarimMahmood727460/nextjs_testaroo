@@ -1,5 +1,5 @@
 {
-  "id": "job_1725378724428",
+  "id": "job_1725525624160",
   "what": "Accessibility check for https://news.ycombinator.com/",
   "strict": true,
   "standard": "only",
@@ -40,5 +40,8 @@
       ],
       "what": "Axe Core Rules"
     }
-  ]
+  ],
+  "sources": {},
+  "creationTimeStamp": "240905T0840",
+  "executionTimeStamp": "240905T0845"
 }

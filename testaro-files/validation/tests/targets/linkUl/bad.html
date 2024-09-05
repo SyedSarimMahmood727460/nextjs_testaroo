@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  © 2022–2023 CVS Health and/or one of its affiliates. All rights reserved.
+
+  MIT License
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+-->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Page with non-underlined inline links</title>
+    <meta name="description" content="tester">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .nude > li > a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Page with non-underlined inline links</h1>
+      <p>This paragraph contains an inline link to <a id="overline" style="text-decoration: overline" href="https://en.wikipedia.org">English information</a> that has an overline instead of an underline.</p>
+      <p>This paragraph contains an inline link to <a style="text-decoration: none" href="https://fr.wikipedia.org">French information</a> without any underline.</p>
+      <p>This paragraph introduces a list of nonunderlined links, but it contains only 1 link, so that link fails to be classified as a list link.</p>
+      <ul class="nude"</ul>
+        <li><a href="https://eus.wikipedia.org">Basque information</a></li>
+      </ul>
+      <p>This paragraph introduces a list of nonunderlined links, but it contains an item that is not a link, so its link fails to be classified as a list link.</p>
+      <ul class="nude">
+        <li><span>Spanish information is not available</span></li>
+        <li><a href="https://eo.wikipedia.org">Esperanto information</a></li>
+      </ul>
+      <p>This paragraph introduces a list of nonunderlined links, but it contains additional text, so its links fail to be classified as list links.</p>
+      <ul class="nude">
+        <li><a id="extraText" href="https://fr.wikipedia.org">French information</a> is available, as well as</li>
+        <li><a href="https://tr.wikipedia.org">Turkish information</a></li>
+      </ul>
+      <p>Defects: 6</p>
+    </main>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 {
-  "id": "job_1725378817167",
-  "what": "Accessibility check for https://www.thenews.com.pk/",
+  "id": "job_1725525581415",
+  "what": "Accessibility check for https://news.ycombinator.com/",
   "strict": true,
   "standard": "only",
   "observe": false,
@@ -23,7 +23,7 @@
   "browserID": "chromium",
   "target": {
     "what": "Target Website",
-    "url": "https://www.thenews.com.pk/"
+    "url": "https://news.ycombinator.com/"
   },
   "acts": [
     {
@@ -40,5 +40,8 @@
       ],
       "what": "Axe Core Rules"
     }
-  ]
+  ],
+  "sources": {},
+  "creationTimeStamp": "240905T0839",
+  "executionTimeStamp": "240905T0844"
 }
