@@ -53,7 +53,8 @@ const fnArgs = process.argv.slice(3);
 const jobDir = process.env.JOBDIR;
 const todoDir = `${jobDir}/todo`;
 const reportDir = process.env.REPORTDIR;
-const rawDir = `${reportDir}/raw`;
+const rawDir = `${reportDir}/results`;
+
 
 // FUNCTIONS
 
@@ -63,8 +64,8 @@ const callRun = async jobIDStart => {
   const jobDirFileNames = await fs.readdir(todoDir);
   const jobFileNames = jobDirFileNames.filter(fileName => fileName.endsWith('.json'));
   const specifiedJobFileNames = jobIDStart
-  ? jobFileNames.filter(fileName => fileName.startsWith(jobIDStart))
-  : jobFileNames;
+    ? jobFileNames.filter(fileName => fileName.startsWith(jobIDStart))
+    : jobFileNames;
   const jobFileName = specifiedJobFileNames[0];
   // If it exists:
   if (jobFileName) {
@@ -78,9 +79,11 @@ const callRun = async jobIDStart => {
     await doJob(report);
     // Archive it.
     await fs.rename(`${todoDir}/${jobFileName}`, `${jobDir}/done/${jobFileName}`);
-    // Save the report.
-    await fs.writeFile(`${rawDir}/${jobFileName}`, JSON.stringify(report, null, 2));
-    console.log(`Job completed and report ${report.id}.json saved in ${rawDir}`);
+    // Create the result filename
+    const resultFileName = jobFileName.replace('.json', '-result.json');
+    // Save the report with the new filename.
+    await fs.writeFile(`${rawDir}/${resultFileName}`, JSON.stringify(report, null, 2));
+    console.log(`Job completed and report ${resultFileName} saved in ${rawDir}`);
   }
   // Otherwise, i.e. if the job does not exist.
   else {
