@@ -20,3 +20,11 @@ import {
       };
     },
   );
+
+  export const test = pgTable(
+    'test',
+    {
+      id: serial('id').primaryKey(),
+      name: text('name').notNull(),
+    }
+  );

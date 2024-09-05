@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react';
+import { insertTestData } from '../lib/fetchDataQueries';
 
 export default function UrlForm() {
   const [url, setUrl] = useState('');
@@ -17,6 +18,9 @@ export default function UrlForm() {
       });
       if (response.ok) {
         setMessage('Job created successfully!');
+
+        insertTestData(56,"sarim");
+
         setTimeout(async () => {
           try {
             const res = await fetch('/api/callRun');
@@ -28,7 +32,7 @@ export default function UrlForm() {
           } catch (error) {
             console.error('Error:', error);
           }
-        }, 4000); // 4000 milliseconds = 4 seconds
+        }, 4000);
       }
       else {
         setMessage('Error creating job');
