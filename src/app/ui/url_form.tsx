@@ -17,7 +17,20 @@ export default function UrlForm() {
       });
       if (response.ok) {
         setMessage('Job created successfully!');
-      } else {
+        setTimeout(async () => {
+          try {
+            const res = await fetch('/api/callRun');
+            if (!res.ok) {
+              throw new Error('Failed to execute call file');
+            }
+            const data = await res.json();
+            console.log(data.message);
+          } catch (error) {
+            console.error('Error:', error);
+          }
+        }, 4000); // 4000 milliseconds = 4 seconds
+      }
+      else {
         setMessage('Error creating job');
       }
     } catch (error) {
