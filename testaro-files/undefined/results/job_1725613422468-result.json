@@ -1,5 +1,5 @@
 {
-  "id": "job_1725555735374",
+  "id": "job_1725613422468",
   "what": "Accessibility check for https://www.ilovepdf.com/",
   "strict": true,
   "standard": "only",
@@ -39,7 +39,7 @@
         "region"
       ],
       "what": "Axe",
-      "startTime": 1725555740801,
+      "startTime": 1725613427378,
       "actualURL": "https://www.ilovepdf.com/",
       "data": {},
       "standardResult": {
@@ -47,7 +47,7 @@
           0,
           6,
           63,
-          10
+          8
         ],
         "instances": [
           {
@@ -259,36 +259,6 @@
             "excerpt": "<div class=\"footer-main__title\">Company</div>",
             "boxID": "916:3251:231:20",
             "pathID": "/html/body/div[2]/div/div[1]/div[4]/div"
-          },
-          {
-            "ruleID": "color-contrast",
-            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.39 (foreground color: #8b8b90, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
-            "ordinalSeverity": 3,
-            "tagName": "A",
-            "id": "",
-            "location": {
-              "doc": "dom",
-              "type": "selector",
-              "spec": "a[onclick=\"yesLang()\"]"
-            },
-            "excerpt": "<a class=\"btn btn--sm btn--grayscale\" onclick=\"yesLang()\">Sí</a>",
-            "boxID": "36:689:35:32",
-            "pathID": "/html/body/div[4]/div/div[2]/a[1]"
-          },
-          {
-            "ruleID": "color-contrast",
-            "what": "Elements must meet minimum color contrast ratio thresholds; Element has insufficient color contrast of 3.39 (foreground color: #8b8b90, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
-            "ordinalSeverity": 3,
-            "tagName": "A",
-            "id": "",
-            "location": {
-              "doc": "dom",
-              "type": "selector",
-              "spec": "a[onclick=\"noLang()\"]"
-            },
-            "excerpt": "<a onclick=\"noLang()\" class=\"btn btn--grayscale btn--sm\">No</a>",
-            "boxID": "82:689:40:32",
-            "pathID": "/html/body/div[4]/div/div[2]/a[2]"
           },
           {
             "ruleID": "region",
@@ -917,7 +887,7 @@
               "spec": "a[title=\"PDF to PDF/A\"] > .tools__item__content"
             },
             "excerpt": "<div class=\"tools__item__content\"> <p>Transform your PDF to PDF/A, the ISO-standardized version of PDF for long-term archiving. Your PDF will preserve formatting when accessed in the future.</p> </div>",
-            "boxID": "971:1205:250:90",
+            "boxID": "",
             "pathID": "/html/body/div[1]/div[3]/div/div[20]/a/div[2]"
           },
           {
@@ -1237,21 +1207,21 @@
           }
         ]
       },
-      "endTime": 1725555748489
+      "endTime": 1725613434539
     }
   ],
   "sources": {},
-  "creationTimeStamp": "240905T1702",
-  "executionTimeStamp": "240905T1707",
+  "creationTimeStamp": "240906T0903",
+  "executionTimeStamp": "240906T0908",
   "sendReportTo": "",
   "jobData": {
-    "startTime": "24-09-05T17:02",
-    "endTime": "24-09-05T17:02",
+    "startTime": "24-09-06T09:03",
+    "endTime": "24-09-06T09:03",
     "elapsedSeconds": 7,
-    "visitLatency": 3,
+    "visitLatency": 1,
     "logCount": 0,
     "logSize": 0,
-    "errorLogCount": 3,
+    "errorLogCount": 4,
     "errorLogSize": 0,
     "prohibitedCount": 0,
     "visitRejectionCount": 0,
@@ -1260,7 +1230,7 @@
     "presses": 0,
     "amountRead": 0,
     "toolTimes": {
-      "axe": 5
+      "axe": 3
     },
     "preventions": {}
   }
