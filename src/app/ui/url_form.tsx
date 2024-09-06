@@ -18,8 +18,7 @@ export default function UrlForm() {
       });
       if (response.ok) {
         setMessage('Job created successfully!');
-
-        insertTestData(56,"sarim");
+        
 
         setTimeout(async () => {
           try {
@@ -33,6 +32,7 @@ export default function UrlForm() {
             console.error('Error:', error);
           }
         }, 4000);
+        insertTestData("umaid");
       }
       else {
         setMessage('Error creating job');
