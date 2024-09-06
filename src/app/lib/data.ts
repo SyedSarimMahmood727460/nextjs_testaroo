@@ -4,6 +4,7 @@ import {
     serial,
     text,
     uniqueIndex,
+    uuid,
   } from 'drizzle-orm/pg-core';
    
   export const customers = pgTable(
@@ -21,10 +22,7 @@ import {
     },
   );
 
-  export const test = pgTable(
-    'test',
-    {
-      id: serial('id').primaryKey(),
-      name: text('name').notNull(),
-    }
-  );
+  export const test = pgTable('test', {
+    id: uuid('id').defaultRandom().primaryKey(),
+    name: text('name').notNull(),
+  });
