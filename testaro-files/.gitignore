@@ -20,6 +20,7 @@
 
 # Dependency directories
 node_modules/
+undefined/
 
 # Temporary files
 temp/
