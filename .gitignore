@@ -8,6 +8,7 @@
 
 #testaro file dependencies
 ./testaro-files/node_modules
+./testaro-files/undefined
 
 # testing
 /coverage
