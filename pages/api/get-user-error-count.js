@@ -5,7 +5,6 @@ export default async function handler(req, res) {
     try {
       const userId = 'user3';
       const result = await getErrorCount(userId);
-      console.log(result);
       res.status(200).json(result);
     } catch (error) {
       console.error('Error fetching error count:', error);
