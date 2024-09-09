@@ -43,7 +43,7 @@ export default function TestResults() {
 
   return (
     <div className="max-w-full mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-4">Test Results</h1>
+      {/* <h1 className="text-2xl font-bold mb-4">Test Results</h1> */}
       <div className="mb-4 flex justify-between items-center">
         <button 
           onClick={() => handlePageChange(currentPage - 1)} 

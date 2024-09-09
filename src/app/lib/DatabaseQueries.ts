@@ -40,3 +40,21 @@ export const insertTestaroResult = async (result: {
 }) => {
   await db.insert(schema.testResults).values(result);
 };
+
+export const insertUserErrorCount = async (
+  userId: string,
+  jobId: string,
+  errorCount: number
+) => {
+  try {
+    await db.insert(schema.userErrorCounts).values({
+      user_id: userId,
+      job_id: jobId,
+      error_count: errorCount,
+    });
+    console.log('User error count inserted successfully');
+  } catch (error) {
+    console.error('Error inserting user error count:', error);
+    throw error;
+  }
+};

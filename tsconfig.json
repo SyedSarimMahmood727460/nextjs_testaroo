@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/api/get-test-results.js", "pages/api/insert-test-results.js", "pages/api/create-testaro-job.js", "pages/api/insert-user-error-count.js"],
   "exclude": ["node_modules"]
 }
