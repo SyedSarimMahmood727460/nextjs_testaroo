@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
+  reactStrictMode: true,
   swcMinify: true,
   env: {
     POSTGRES_URL: process.env.POSTGRES_URL,

@@ -25,12 +25,16 @@ export default function TestResults() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [errorCounts, setErrorCounts] = useState<ErrorCount[]>([]);
+  const [selectedUser, setSelectedUser] = useState('user1');
   const pageSize = 10;
 
   useEffect(() => {
     fetchResults();
-    fetchErrorCount();
   }, [currentPage]);
+  
+  useEffect(() => {
+    fetchErrorCount();
+  }, [selectedUser]);
 
   const fetchResults = async () => {
     try {
@@ -48,7 +52,7 @@ export default function TestResults() {
 
   const fetchErrorCount = async () => {
     try {
-      const response = await fetch(`/api/get-user-error-count`);
+      const response = await fetch(`/api/get-user-error-count?userId=${selectedUser}`);
       if (!response.ok) {
         throw new Error('Failed to fetch error counts');
       }
@@ -61,6 +65,10 @@ export default function TestResults() {
 
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage);
+  };
+
+  const handleUserChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedUser(event.target.value);
   };
 
   return (
@@ -83,6 +91,17 @@ export default function TestResults() {
         >
           Next
         </button>
+        <label htmlFor="user-select" className="sr-only">Select User</label>
+          <select
+            id="user-select"
+
+            onChange={handleUserChange}
+            className="px-3 py-1 border rounded text-xs font-medium text-gray-700 bg-white"
+          >
+            <option value="user1">User 1</option>
+            <option value="user2">User 2</option>
+            <option value="user3">User 3</option>
+          </select>
         <Dialog>
           <DialogTrigger asChild>
             <button className="px-3 py-1 border rounded text-xs font-medium text-white bg-blue-600 hover:bg-blue-700">
@@ -91,7 +110,7 @@ export default function TestResults() {
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
-              <DialogTitle>Error Counts</DialogTitle>
+              <DialogTitle>Error Counts for {selectedUser}</DialogTitle>
             </DialogHeader>
             <div className="h-[300px] w-full">
               <ResponsiveContainer width="100%" height="100%">

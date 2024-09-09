@@ -3,7 +3,7 @@ import { getErrorCount } from '../../src/app/lib/DatabaseQueries';
 export default async function handler(req, res) {
   if (req.method === 'GET') {
     try {
-      const userId = 'user3';
+        const { userId } = req.query;
       const result = await getErrorCount(userId);
       res.status(200).json(result);
     } catch (error) {
