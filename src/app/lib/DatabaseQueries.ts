@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres';
 import { drizzle } from 'drizzle-orm/vercel-postgres';
-import { desc, count } from 'drizzle-orm';
+import { desc, count, eq  } from 'drizzle-orm';
 import * as schema from './data';
 
 export const db = drizzle(sql);
@@ -58,3 +58,12 @@ export const insertUserErrorCount = async (
     throw error;
   }
 };
+
+export const getErrorCount = async (userId: string) => {
+  return await db.select({
+    jobId: schema.userErrorCounts.job_id,
+    errorCount: schema.userErrorCounts.error_count,
+  })
+  .from(schema.userErrorCounts)
+  .where(eq(schema.userErrorCounts.user_id, userId));
+};;

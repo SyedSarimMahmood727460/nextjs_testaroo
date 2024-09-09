@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./dialog";
 
 interface TestResult {
   id: number;
@@ -13,14 +15,21 @@ interface TestResult {
   location_spec: string | null;
 }
 
+interface ErrorCount {
+  jobId: string;
+  errorCount: number;
+}
+
 export default function TestResults() {
   const [results, setResults] = useState<TestResult[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [errorCounts, setErrorCounts] = useState<ErrorCount[]>([]);
   const pageSize = 10;
 
   useEffect(() => {
     fetchResults();
+    fetchErrorCount();
   }, [currentPage]);
 
   const fetchResults = async () => {
@@ -37,13 +46,25 @@ export default function TestResults() {
     }
   };
 
+  const fetchErrorCount = async () => {
+    try {
+      const response = await fetch(`/api/get-user-error-count`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch error counts');
+      }
+      const data = await response.json();
+      setErrorCounts(data);
+    } catch (error) {
+      console.error('Error fetching error counts:', error);
+    }
+  };
+
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage);
   };
 
   return (
     <div className="max-w-full mx-auto px-4 py-8">
-      {/* <h1 className="text-2xl font-bold mb-4">Test Results</h1> */}
       <div className="mb-4 flex justify-between items-center">
         <button 
           onClick={() => handlePageChange(currentPage - 1)} 
@@ -62,6 +83,30 @@ export default function TestResults() {
         >
           Next
         </button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <button className="px-3 py-1 border rounded text-xs font-medium text-white bg-blue-600 hover:bg-blue-700">
+              Show Graph
+            </button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[425px]">
+            <DialogHeader>
+              <DialogTitle>Error Counts</DialogTitle>
+            </DialogHeader>
+            <div className="h-[300px] w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={errorCounts}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="jobId" tickFormatter={() => ""} />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar dataKey="errorCount" fill="#8884d8" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
       <div className="overflow-x-auto shadow-md rounded-lg">
         <table className="w-full min-w-max divide-y divide-gray-200">

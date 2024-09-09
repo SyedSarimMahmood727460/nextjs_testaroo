@@ -36,7 +36,7 @@ export default function UrlForm() {
       const errorCountResponse = await fetch('/api/insert-user-error-count', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId, jobId, errorCount: 0 }) // Initial error count is 0
+        body: JSON.stringify({ userId, jobId, errorCount: 30 }) // Initial error count is 0
       });
 
       if (!errorCountResponse.ok) {
