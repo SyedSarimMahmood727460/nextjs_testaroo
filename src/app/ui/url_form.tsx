@@ -30,23 +30,6 @@ export default function UrlForm() {
             console.error('Error:', error);
           }
         }, 2000);
-
-        setTimeout(async () => {
-          try {
-            const res = await fetch('/api/insert-test-data', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ name: "boiii" })
-            });
-            if (!res.ok) {
-              throw new Error('Failed to insert test data');
-            }
-            const data = await res.json();
-            console.log(data.message);
-          } catch (error) {
-            console.error('Error:', error);
-          }
-        }, 1000);
         
       }
       else {

@@ -1,5 +1,5 @@
-import LatestCustomers from "./ui/LatestCustomers";
 import UrlForm from "./ui/url_form";
+import TestResults from "./ui/testResults";
 
 export default async function Page() {
   return (
@@ -12,8 +12,8 @@ export default async function Page() {
       </div>
       <div className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
         <div className="p-6">
-          <h2 className="text-xl font-semibold mb-4 text-gray-700">Latest Customers</h2>
-          <LatestCustomers />
+          <h2 className="text-xl font-semibold mb-4 text-gray-700">Test Results</h2>
+          <TestResults />
         </div>
       </div>
     </main>
